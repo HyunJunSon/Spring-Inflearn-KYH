@@ -11,3 +11,16 @@ GET http://localhost:8080/response-html
 ### ResponseJsonServlet
 GET http://localhost:8080/response-json
 
+---V1
+
+### v1 new-form
+GET http://localhost:8080/controller/v1/members/new-form
+
+### old Controller
+GET http://localhost:8080/springmvc/old-controller
+
+### MyHttpRequestHandler
+GET http://localhost:8080/springmvc/request-handler
+
+### Spring mvc v1
+GET http://localhost:8080//springmvc/v1/controllers/new-form
