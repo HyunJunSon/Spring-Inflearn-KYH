@@ -14,7 +14,7 @@ public class MappingController {
 
     /**
      * 기본허용
-     * 둘다 허용 /hello-basic, /hello-basic/
+     * 둘다 허용 /hello.html-basic, /hello.html-basic/
      * HTTP 메서드 모두 허용 GET,HEAD,POST,PUT,PATCH,DELETE
      */
     @RequestMapping({"/hello-basic" , "/hello-basic/"})
@@ -107,6 +107,6 @@ public class MappingController {
 
     /**
      * @RequestMapping 사용
-     * 둘다 허용 /hello-basic, /hello-basic/
+     * 둘다 허용 /hello.html-basic, /hello.html-basic/
      */
 }

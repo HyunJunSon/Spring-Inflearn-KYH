@@ -1,0 +1,55 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+### Request to /mapping-produce endpoint
+POST http://localhost:8080/mapping-produce
+Accept: text/html
+
+###
+GET http://localhost:8080/request-param-default?username=son
+
+###
+POST http://localhost:8080/request-body-json-v2
+Content-Type: application/json
+
+{
+  "username" : "son",
+  "age": 20
+}
+
+<> 2024-11-26T103824.200.txt
+<> 2024-11-26T103734.400.json
+
+
+###
+POST http://localhost:8080/request-body-json-v4
+Content-Type: application/json
+
+{
+  "username": "choi",
+  "age": 50
+}
+
+<> 2024-11-26T105647.200.txt
+<> 2024-11-26T105546.500.json
+<> 2024-11-26T105532.415.json
+
+###
+GET http://localhost:8080/response-body-string-v1
+
+<> 2024-11-26T120435.200.txt
+
+###
+GET http://localhost:8080/response-body-string-v2
+
+
+###
+GET http://localhost:8080/response-body-string-v3
+
+
+###
+GET http://localhost:8080/response-body-json-v1
+
+###
+GET http://localhost:8080/response-body-json-v2
