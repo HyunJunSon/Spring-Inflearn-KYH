@@ -1,0 +1,25 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+POST http://localhost:8080/validation/api/items/add
+Content-Type: application/json
+
+{
+  "itemName": "hello",
+  "price": "A",
+  "quantity": 10
+}
+
+
+
+###
+POST http://localhost:8080/validation/api/items/add
+Content-Type: application/json
+
+{
+  "itemName": "hello",
+  "price": 1000,
+  "quantity": 10000
+}
