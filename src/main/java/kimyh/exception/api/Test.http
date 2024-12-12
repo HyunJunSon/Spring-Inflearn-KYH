@@ -1,0 +1,34 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+###
+GET http://localhost:8080/api/members/user-ex
+#Accept: application/json
+
+
+###
+GET http://localhost:8080/api/response-status-ex1
+
+
+###
+GET http://localhost:8080/api/response-status-ex2
+
+
+###
+GET http://localhost:8080/api/default-handler-ex?data=hello
+
+
+###
+@id = variable value
+GET http://localhost:8080/api2/members/{{id}}
+
+###
+GET http://localhost:8080/api2/members/ex
+
+###
+GET http://localhost:8080/api2/members/bad
+
+
+###
+GET http://localhost:8080/api2/members/user-ex

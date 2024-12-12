@@ -4,8 +4,12 @@ package kimyh.exception.servlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Map;
 
 @Slf4j
 @Controller
@@ -25,11 +29,20 @@ public class ErrorPageController {
         return "error-page/404";
     }
 
-    @RequestMapping("/error-page/500")
+//    @RequestMapping("/error-page/500")
     public String errorPage500(HttpServletRequest request, HttpServletResponse response) {
         log.info("errorPage 500");
         printErrorInfo(request);
         return "error-page/500";
+    }
+
+    @RequestMapping(value = "/error-page/500", produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<Map<String,Object>> errorPage500Api(HttpServletRequest request, HttpServletResponse response) {
+        log.info("API errorPage 500");
+        printErrorInfo(request);
+        return ResponseEntity
+                .status(HttpServletResponse.SC_INTERNAL_SERVER_ERROR)
+                .body(Map.of("status", HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "message", "500 error"));
     }
 
     private void printErrorInfo(HttpServletRequest request) {
