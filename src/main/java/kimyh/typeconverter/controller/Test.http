@@ -1,0 +1,16 @@
+### GET request to example server
+GET https://examples.http-client.intellij.net/get
+    ?generated-in=IntelliJ IDEA
+
+### data값이 없어서 에러발생
+GET http://localhost:8080/hello-v1
+
+### 데이터변환(서블릿 객체)
+GET http://localhost:8080/hello-v1?data=20
+
+
+### 데이터변환(@RequestParam 자동변환)
+GET http://localhost:8080/hello-v2?data=20
+
+###IpPort객체 Converting
+GET http://localhost:8080/ip-port?ipPort=127.0.0.1:8080
