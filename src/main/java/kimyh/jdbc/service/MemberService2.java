@@ -1,7 +1,6 @@
 package kimyh.jdbc.service;
 
 import kimyh.jdbc.domain.Member;
-import kimyh.jdbc.repository.MemberRepositoryV1;
 import kimyh.jdbc.repository.MemberRepositoryV2;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
