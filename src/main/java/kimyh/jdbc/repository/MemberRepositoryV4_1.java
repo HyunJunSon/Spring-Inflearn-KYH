@@ -13,8 +13,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
 
-import static kimyh.jdbc.connection.DBConnectionUtil.getConnection;
-
 
 /**
  * 예외누수문제해결
